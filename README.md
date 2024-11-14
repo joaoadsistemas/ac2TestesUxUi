@@ -1,22 +1,8 @@
-# Sistema de Login - Análise de Código
+# Análise de Caixa Branca
 
-## Erros Encontrados
-1. Segurança
-   - SQL Injection na construção da query
-   - Credenciais expostas no código
-   - Senha sem criptografia
+## Complexidade Ciclomática
+V(G) = 14 - 14 + 2(1) = 2
 
-2. Gestão de Recursos
-   - Conexões não fechadas
-   - Statement não fechado
-   - ResultSet não fechado
-
-3. Tratamento de Exceções
-   - Blocos catch vazios
-   - Exceções genéricas
-   - Sem logging
-
-4. Design e Implementação
-   - Driver MySQL incorreto
-   - Variáveis públicas
-   - Sem validação de entrada
+## Caminhos Base
+1. Caminho sucesso: 1-2-3-4-6-7-8-9-10-11-12
+2. Caminho falha: 1-2-3-5-6-7-8-9-13-12
